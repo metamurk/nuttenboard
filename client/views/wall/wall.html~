@@ -1,0 +1,12 @@
+
+<template name="wall">
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="text-center">
+        {{> showCategoryButtons}}
+      </div>
+    </div>  
+  </div>
+</template>
+
+

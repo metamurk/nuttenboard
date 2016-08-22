@@ -1,0 +1,9 @@
+Router.route( 'sell', {
+  path: '/',
+  template: 'sell',
+  onBeforeAction: function(){
+    Session.set( 'currentRoute', 'sell' );
+    this.next();
+  }
+});
+

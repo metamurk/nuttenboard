@@ -1,0 +1,10 @@
+Router.route( 'wall', {
+  path: '/',
+  template: 'wall',
+  onBeforeAction: function(){
+    Session.set( 'currentRoute', 'wall' );
+    this.next();
+  }
+});
+
+
