@@ -1,10 +1,13 @@
-Router.route( 'wall', {
-  path: '/',
-  template: 'wall',
-  onBeforeAction: function(){
-    Session.set( 'currentRoute', 'wall' );
-    this.next();
-  }
+Router.route('/', function () {
+  this.render('Wall');
 });
 
+Router.route( 'Suscribe', {
+  path: '/Suscribe',
+  template: 'suscribe',
+});
 
+Router.route( 'Login', {
+  path: '/Login',
+  template: 'login',
+});
