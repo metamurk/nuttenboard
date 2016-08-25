@@ -1,1 +1,0 @@
-{"version":3,"sources":["meteor://💻app/server/server.js"],"names":[],"mappings":";;;;;;;;;;;;;;;AAOA,OAAO,OAAP,CAAe,YAAU,CAIxB,CAJD,sD","file":"/app.js","sourcesContent":["\n/*\n* Startup\n* Functions to run on server startup. Note: this file is for calling functions\n* only. Define functions in /server/admin/startup-functions.\n*/\n\nMeteor.startup(function(){\n\n\n\n});\n"]}
