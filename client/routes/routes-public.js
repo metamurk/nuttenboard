@@ -16,3 +16,13 @@ Router.route( 'Profile', {
   path: '/Profile',
   template: 'profile',
 });
+
+Router.route( 'CreateAuction', {
+  path: '/CreateAuction',
+  template: 'createAuction',
+});
+
+Router.route( 'Messages', {
+  path: '/Messages',
+  template: 'messages',
+});

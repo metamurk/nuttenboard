@@ -11,3 +11,18 @@ Router.route( 'Login', {
   path: '/Login',
   template: 'login',
 });
+
+Router.route( 'Profile', {
+  path: '/Profile',
+  template: 'profile',
+});
+
+Router.route( 'Sell', {
+  path: '/Sell',
+  template: 'sell',
+});
+
+Router.route( 'Messages', {
+  path: '/Messages',
+  template: 'messages',
+});
