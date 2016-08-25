@@ -1,9 +1,6 @@
 {
   "header": {
-    "create_auction": "Create Auction",
-    "nutten_board": "Nuttenboard"
-  },
-  "wall": {
-    "wall_test": "Wand"
+    "title": "Read More",
+    "description": "Build up your reading list."
   }
 }  

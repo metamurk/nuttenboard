@@ -26,3 +26,8 @@ Router.route( 'Messages', {
   path: '/Messages',
   template: 'messages',
 });
+
+Router.route( 'Auction', {
+  path: '/Auction',
+  template: 'auction',
+});

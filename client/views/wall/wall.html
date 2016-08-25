@@ -1,10 +1,15 @@
 
 <template name="wall">
   <div class="container-fluid">
-    <div class="row-fluid">
-      <div class="text-center">
-             {{_ "wall_test"}}
-      </div>
+    <div class="row-fluid m-x-auto text-center">
+		{{#each auction in auctions}}
+			<div class="text-center auctions-box img-rounded">
+				<img src="http://youporn.yourporno.biz/files/2012/09/Das-scheint-Porno-G%C3%B6ttin-zu-sein-bei-den-MEGA-Titten.jpg" class="auctions-img"/>
+				<div><a href="/auction">{{auction.title}}</a></div>
+				<div><span>{{auction.adress}}</span></div>
+			</div>
+		{{else}}
+		{{/each}}
     </div>  
   </div>
 </template>
