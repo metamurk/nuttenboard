@@ -10,47 +10,42 @@
       </button>
       
     </div>
-    <a class="navbar-brand" href="/">{{_ "nutten_board"}}</a>
+    <a class="navbar-brand" href="/">{{_ "NUTTENBOARD"}}</a>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
      
       <ul class="nav navbar-nav navbar-left">
-                   <form class="navbar-form" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" name="q">
-           
-                </div>
-         <form class="navbar-form pull-left">
-                     <select name="" id="" class="form-control" style="width: 80px;">
-                    <option value="D">D</option>
-                    <option value="CH">CH</option>
-                    <option value="A">A</option>
+         <form class="navbar-form" role="search">					
+					<input type="text" class="form-control" placeholder="{{_ 'SEARCH'}}" name="q">           				
+                    <select name="" id="" class="form-control" style="width: 80px;">
+						<option value="D">D</option>
+						<option value="CH">CH</option>
+						<option value="A">A</option>
                     </select>
 
                     <select name="" id="" class="form-control" style="width: 180px;">
-                    <option value="muc">München</option>
-                    <option value="ffm">Frankfurt</option>
+						<option value="muc">{{_ "MUNICH"}}</option>
+						<option value="ffm">{{_ "FRANKFURT"}}</option>
                     </select>
 
-                <button type="submit" class="btn btn-default">Search</button>
-               </form>
+                <button type="submit" class="btn btn-default">{{_ "SEARCH"}}</button>         
            </form>
       </ul>
       <ul class="nav navbar-nav navbar-right">
 {{#if currentUser}}
-         <li><a href="/CreateAuction">{{_ "string_name"}}</a></li>
-         <li><a href="/Messages">Messages</a></li>
+         <li><a href="/CreateAuction">{{_ "CREATE_AUCTION"}}</a></li>
+         <li><a href="/Messages">{{_ "MESSAGES"}}</a></li>
          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{_ "USER"}} <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/Profile">Your Nuttenboard</a></li>
+            <li><a href="/Profile">{{_ "YOUR_BOARD"}}</a></li>
             <li class="divider"></li>
-            <li><a href="#" class="logout">Logout</a></li>
+            <li><a href="#" class="logout">{{_ "LOGOUT"}}</a></li>
           </ul>
           </li>
 {{else}}
-        <li><a href="/Suscribe">Suscribe</a></li>
-        <li><a href="/Login">Login</a></li>
+        <li><a href="/Suscribe">{{_ "SUBSCRIBE"}}</a></li>
+        <li><a href="/Login">{{_ "LOGIN"}}</a></li>
  {{/if}}     
 {{> i18n_dropdown}}   
       </ul>

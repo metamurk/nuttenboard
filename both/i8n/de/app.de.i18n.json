@@ -1,9 +1,17 @@
 {
-  "header": {
-    "create_auction": "Erstelle Auktion",
-     "nutten_board": "Nuttenboard"
-  },
-  "wall": {
-    "wall_test": "Wand"
-  }
+     //Header
+     "NUTTENBOARD": "Nuttenboard",
+	 "CREATE_AUCTION": "Erstelle Auktion",
+	 "MESSAGES": "Nachrichten",
+	 "USER": "Benutzer",
+	 "SUBSCRIBE": "Registrieren",
+	 "LOGIN": "Anmelden",
+	 "LOGOUT": "Abmelden",
+	 "YOUR_BOARD": "Dein Nuttenboard",
+	 "SEARCH": "Suche",
+	 
+	 //Citys
+	 "MUNICH": "München",
+	 "FRANKFURT": "Frankfurt"
+	 
 }  
