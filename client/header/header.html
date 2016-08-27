@@ -38,21 +38,14 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
 {{#if currentUser}}
-         <li><a href="/CreateAuction">{{_ "string_name"}}</a></li>
+         <li><a href="/CreateAuction">{{_ "create_auction"}}</a></li>
          <li><a href="/Messages">Messages</a></li>
-         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="/Profile">Your Nuttenboard</a></li>
-            <li class="divider"></li>
-            <li><a href="#" class="logout">Logout</a></li>
-          </ul>
-          </li>
+         <li><a href="/Profile">Your Nuttenboard</a></li>
+         <li><a href="#" class="logout">Logout</a></li>
 {{else}}
         <li><a href="/Suscribe">Suscribe</a></li>
         <li><a href="/Login">Login</a></li>
  {{/if}}     
-{{> i18n_dropdown}}   
       </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
