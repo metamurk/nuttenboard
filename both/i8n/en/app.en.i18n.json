@@ -1,9 +1,17 @@
 {
-  "header": {
-    "create_auction": "Create Auction",
-    "nutten_board": "Nuttenboard"
-  },
-  "wall": {
-    "wall_test": "Wall"
-  }
+     //Header
+     "NUTTENBOARD": "Nuttenboard",
+	 "CREATE_AUCTION": "Create Auction",
+	 "MESSAGES": "Messages",
+	 "USER": "User",
+	 "SUBSCRIBE": "Subscribe",
+	 "LOGIN": "Login",
+	 "LOGOUT": "Logout",
+	 "YOUR_BOARD": "Your Nuttenboard",
+	 "SEARCH": "Search",
+	 
+	 //Citys
+	 "MUNICH": "Munich",
+	 "FRANKFURT": "Frankfurt"
+	 
 }  
