@@ -27,3 +27,4 @@ tap:i18n
 shell-server
 tap:i18n-ui
 session
+sjors:meteor-masonry
