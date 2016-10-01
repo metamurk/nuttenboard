@@ -28,6 +28,6 @@ Router.route( 'Messages', {
 });
 
 Router.route( 'Auction', {
-  path: '/Auction',
+  path: '/Auction/:_id',
   template: 'auction',
 });
