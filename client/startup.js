@@ -9,6 +9,8 @@ if (Meteor.isClient) {
   Meteor.startup(function () {
     Session.set("showLoadingIndicator", true);
 
+
+
     TAPi18n.setLanguage(getUserLanguage())
       .done(function () {
                console.log("language set");
