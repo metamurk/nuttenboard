@@ -1,4 +1,9 @@
-Auctions = new Meteor.Collection( 'auctions' );
+Auctions = new Meteor.Collection( 'auctions', {
+	transform: function(f) {
+         f.url = 'http://youporn.yourporno.biz/files/2012/09/Das-scheint-Porno-G%C3%B6ttin-zu-sein-bei-den-MEGA-Titten.jpg';
+         return f;
+		}
+} );
 
 //data scheme
 var AuctionsSchema = new SimpleSchema({
