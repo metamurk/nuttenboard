@@ -21,7 +21,7 @@ Template.wall.rendered = function() {
   setTimeout(function(){
     masonize(function(){
     })
-  }, 3500);
+  }, 1500);
 };
 
 
