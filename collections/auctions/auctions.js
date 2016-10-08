@@ -14,6 +14,10 @@ var AuctionsSchema = new SimpleSchema({
   "subtitle": {
     type: String,
     label: "Subtitle of the auction"
+  },
+  "description": {
+	  type: String,
+	  label: "Description of the auction"
   }
 });
 Auctions.attachSchema( AuctionsSchema );
@@ -22,6 +26,9 @@ Auctions.attachSchema( AuctionsSchema );
 if(Meteor.isServer){
     Meteor.publish('auctions', function () {
         return Auctions.find();
+    });
+	Meteor.publish('auction', function (id) {
+        return Auctions.find({ _id: id});
     });
 }
 else{

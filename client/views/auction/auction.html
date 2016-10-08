@@ -1,2 +1,18 @@
 <template name="auction">
+{{#each currentAuction}}
+		<div class='item' >
+			<div class='thumbnail content'>
+			  <img src={{url}} width="190px" height="253px"/>
+				<span><strong>{{title}}</strong></span>
+				<span>{{subtitle}}</span>
+			  </div> 
+			  <div>
+				{{description}}
+			</div>
+		  </div>
+	{{else}}
+	<div>
+	NICHT Test
+	</div>
+{{/each}}
 </template>
