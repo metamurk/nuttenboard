@@ -22,6 +22,7 @@
      {{> afQuickField name='description' rows=6}}
    </fieldset>
 {{> uploadForm}}
+{{> file}}
   <div class="form-group">
     <button type="submit" class="btn btn-primary">Add Auction</button>
     <button type="reset" class="btn btn-default">Reset Form</button>
@@ -30,6 +31,13 @@
   {{/autoForm}}
 </template>
 
+<template name='file'>
+gydyg
+  <img src="{{imageFile.link}}"  />
+  <!-- Same as: -->
+  <!-- <img src="{{fileURL imageFile}}" alt="{{imageFile.name}}" /> -->
+  <hr>
+</template>
 
 <template name="uploadForm">
   {{#with currentUpload}}
