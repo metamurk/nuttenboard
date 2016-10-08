@@ -19,16 +19,30 @@
    <fieldset>
      {{> afQuickField name='title'}}
      {{> afQuickField name='subtitle'}}
-     {{> afQuickField name="category"}}
-     {{> afQuickField name="picture"}}
    </fieldset>
-
+{{> uploadForm}}
+{{> file}}
   <div class="form-group">
     <button type="submit" class="btn btn-primary">Add Auction</button>
     <button type="reset" class="btn btn-default">Reset Form</button>
   </div>
-
+       
   {{/autoForm}}
 </template>
 
+<template name='file'>
+gydyg
+  <img src="{{imageFile.link}}" alt="{{imageFile.name}}" />
+  <!-- Same as: -->
+  <!-- <img src="{{fileURL imageFile}}" alt="{{imageFile.name}}" /> -->
+  <hr>
+</template>
 
+<template name="uploadForm">
+  {{#with currentUpload}}
+    Uploading <b>{{file.name}}</b>: 
+    <span id="progress">{{progress.get}}%</span>
+  {{else}}
+    <input id="fileInput" type="file" />
+  {{/with}}
+</template>

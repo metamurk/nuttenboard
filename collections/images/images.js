@@ -1,5 +1,5 @@
 
-var UserImages = new FilesCollection({
+UserImages = new FilesCollection({
   collectionName: 'UserImages',
   allowClientCode: false, // Disallow remove files from Client
   onBeforeUpload: function (file) {

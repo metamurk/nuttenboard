@@ -36,3 +36,11 @@ Template.uploadForm.events({
     }
   }
 });
+
+Template.file.helpers({
+  imageFile: function () {
+    return UserImages.findOne();
+  }
+});
+
+
