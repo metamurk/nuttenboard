@@ -1,5 +1,5 @@
 <template name="auction">
-{{#each currentAuction}}
+{{currentAuction}}
 		<div class='item' >
 			<div class='thumbnail content'>
 			  <img src={{url}} width="190px" height="253px"/>
@@ -10,9 +10,5 @@
 				{{description}}
 			</div>
 		  </div>
-	{{else}}
-	<div>
-	NICHT Test
-	</div>
-{{/each}}
+{{pathFor route="Auction"}}
 </template>

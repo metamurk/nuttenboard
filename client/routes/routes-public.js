@@ -27,7 +27,9 @@ Router.route( 'Messages', {
   template: 'messages',
 });
 
-Router.route( 'Auction', {
-  path: '/Auction',
-  template: 'auction',
+Router.route( 'Auction/:id', {
+  name:"Auction",
+  data:function(){
+	  return Auctions.findOne(this.params.id);
+  }
 });

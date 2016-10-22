@@ -1,5 +1,6 @@
 Template.auction.helpers({
 	currentAuction: function() {
-		return Auctions.find('zzSnLtGSQRrhdTc2i');
+		
+		return Router.current().route.path(this);
 	}
 });

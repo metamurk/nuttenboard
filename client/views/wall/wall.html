@@ -12,7 +12,7 @@
 		  <div id='auctions'>
     <div id='mainContent'>
       {{#each auctionlist}}
-          <div class='item' ><a href="/auction?id={{_id}}">
+          <div class='item' ><a onclick="Router.go('Auction', {{_id}});">
 			<ul id='{{_id}}' class='nav nav-list text-left'>
 			  <li class='thumbnail'> <img src={{url}} width="190px" height="253px"/> </li>
 			  <div class='thumbnail content'>

@@ -28,7 +28,7 @@ if(Meteor.isServer){
         return Auctions.find();
     });
 	Meteor.publish('auction', function (id) {
-        return Auctions.find({ _id: id});
+        return Auctions.findOne({ _id: id});
     });
 }
 else{
