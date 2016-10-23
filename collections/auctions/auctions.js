@@ -1,6 +1,6 @@
 Auctions = new Meteor.Collection( 'auctions', {
 	transform: function(f) {
-         f.url = 'http://youporn.yourporno.biz/files/2012/09/Das-scheint-Porno-G%C3%B6ttin-zu-sein-bei-den-MEGA-Titten.jpg';
+         f.url = 'http://imalbum.aufeminin.com/album/D20051217/152757_FQHS7Y2G8AFWJHTRRNXTT7CSP6LGOW_katze_H163854_L.jpg';
          return f;
 		}
 } );
@@ -28,7 +28,14 @@ var AuctionsSchema = new SimpleSchema({
 	  label: "Date at which the auction was created",
 	  autoValue: function(){
 		return new Date();
-		},
+		}
+  },
+  user: {
+	  type: String,
+	  label: "User, who created the auction",
+	  autoValue: function(){
+		  return Meteor.userId();
+	  }
   },
   //field for testing some things :)
   testdata: {
