@@ -18,6 +18,28 @@ var AuctionsSchema = new SimpleSchema({
   "description": {
 	  type: String,
 	  label: "Description of the auction"
+  },
+  "endDate": {
+	  type: Date,
+	  label: "Date at which the auction should end",
+  },
+  "creationDate": {
+	  type: Date,
+	  label: "Date at which the auction was created",
+	  autoValue: function(){
+		return new Date();
+		},
+  },
+  //field for testing some things :)
+  testdata: {
+	  type: String,
+	  label: "testfield",
+	  autoValue: function(){
+		return "autoValue";
+		},
+	  autoform: {
+		  rows: 10
+		}
   }
 });
 Auctions.attachSchema( AuctionsSchema );

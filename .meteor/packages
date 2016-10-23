@@ -29,3 +29,5 @@ tap:i18n-ui
 session
 ostrio:files
 sjors:meteor-masonry
+aldeed:autoform-bs-datepicker
+rajit:bootstrap3-datepicker
