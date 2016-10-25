@@ -1,3 +1,16 @@
+Meteor.subscribe("auctions");
+
+Template.createAuctionForm.events({
+    'submit': function(){
+        Auctions.insert({
+            title: $('#title').val(),
+            subtitle: $('#subtitle').val(),
+            description: $('#description').val(),
+            endDate: new Date()
+        });
+    }
+})
+
 Template.uploadForm.onCreated(function () {
   this.currentUpload = new ReactiveVar(false);
 });
@@ -11,7 +24,7 @@ Template.uploadForm.helpers({
 Template.uploadForm.events({
   'change #fileInput': function (e, template) {
     if (e.currentTarget.files && e.currentTarget.files[0]) {
-      // We upload only one file, in case 
+      // We upload only one file, in case
       // multiple files were selected
       var upload = UserImages.insert({
         file: e.currentTarget.files[0],

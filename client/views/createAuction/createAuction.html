@@ -1,4 +1,3 @@
-
 <template name="createAuction">
  <div class="container">
   <div class="row">
@@ -14,23 +13,22 @@
 </template>
 
 <template name="createAuctionForm">
-
-  {{#autoForm collection="Auctions" id="auctionInsertForm" type="insert"}}
-   <fieldset>
-     {{> afQuickField name='title'}}
-     {{> afQuickField name='subtitle'}}
-     {{> afQuickField name='description' rows=6}}
-     {{> afQuickField name='endDate' type='bootstrap-datepicker' buttonClasses="glyphicon glyphicon-calendar"}}
-     {{> afQuickField name='testdata'}}
-   </fieldset>
-{{> uploadForm}}
-{{> file}}
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary">Add Auction</button>
-    <button type="reset" class="btn btn-default">Reset Form</button>
-  </div>
-       
-  {{/autoForm}}
+    <form>
+        <label for="title">Title</label>
+        <input id="title" type="text" name="title"><br>
+        <label for="subtitle">Subtile</label>
+        <input id="subtitle" type="text" name="subtitle"><br>
+        <label for="description">Description</label>
+        <input id="description" type="text" name="description"><br>
+        <div class="input-group date" data-provide="datepicker">
+            <input id="endDate" type="text" class="form-control">
+            <div class="input-group-addon">
+                <span class="glyphicon glyphicon-th"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Auction</button>
+        <button type="reset" class="btn btn-default">Reset Form</button>
+    </form>
 </template>
 
 <template name='file'>
