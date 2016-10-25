@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca395cc3-d28a-4758-a88e-b29843878c8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/nuttenboards.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/createAuction/createAuction.html" afterPath="$PROJECT_DIR$/client/views/createAuction/createAuction.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/createAuction/createAuction.js" afterPath="$PROJECT_DIR$/client/views/createAuction/createAuction.js" />
     </list>
     <ignored path="nuttenboards.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,22 +24,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="createAuction.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="createAuction.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/views/createAuction/createAuction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="370">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createAuction.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="createAuction.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/createAuction/createAuction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="204">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <folding>
+                <marker date="1477415024034" expanded="true" signature="65:653" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -355,12 +351,12 @@
       <option name="presentableId" value="Default" />
       <updated>1477240757974</updated>
       <workItem from="1477240759900" duration="649000" />
-      <workItem from="1477410556668" duration="2559000" />
+      <workItem from="1477410556668" duration="4515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3208000" />
+    <option name="totallyTimeSpent" value="5164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -440,18 +436,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/createAuction/createAuction.html">
+    <entry file="file://$PROJECT_DIR$/client/views/createAuction/createAuction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <marker date="1477415024034" expanded="true" signature="65:653" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/createAuction/createAuction.js">
+    <entry file="file://$PROJECT_DIR$/client/views/createAuction/createAuction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="370">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="41" />
           <folding />
         </state>
       </provider>

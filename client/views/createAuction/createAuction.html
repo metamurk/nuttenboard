@@ -1,15 +1,15 @@
 <template name="createAuction">
- <div class="container">
-  <div class="row">
-    <div class="col-sm-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+                {{> createAuctionForm}}
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
     </div>
-    <div class="col-sm-6">
-        {{> createAuctionForm}}
-       </div>
-       <div class="col-sm-3">
-      </div>
-  </div>
- </div>
 </template>
 
 <template name="createAuctionForm">
@@ -26,24 +26,27 @@
                 <span class="glyphicon glyphicon-th"></span>
             </div>
         </div>
+        <form id="form1" runat="server">
+            <input type='file' id="imgInp"/>
+            <img id="blah" src="#" alt="your image"/>
+        </form>
         <button type="submit" class="btn btn-primary">Add Auction</button>
         <button type="reset" class="btn btn-default">Reset Form</button>
     </form>
 </template>
-
 <template name='file'>
-gydyg
-  <img src="{{imageFile.link}}"  />
-  <!-- Same as: -->
-  <!-- <img src="{{fileURL imageFile}}" alt="{{imageFile.name}}" /> -->
-  <hr>
+    gydyg
+    <img src="{{imageFile.link}}"/>
+    <!-- Same as: -->
+    <!-- <img src="{{fileURL imageFile}}" alt="{{imageFile.name}}" /> -->
+    <hr>
 </template>
 
 <template name="uploadForm">
-  {{#with currentUpload}}
-    Uploading <b>{{file.name}}</b>: 
+    {{#with currentUpload}}
+    Uploading <b>{{file.name}}</b>:
     <span id="progress">{{progress.get}}%</span>
-  {{else}}
-    <input id="fileInput" type="file" />
-  {{/with}}
+    {{else}}
+    <input id="fileInput" type="file"/>
+    {{/with}}
 </template>
