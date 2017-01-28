@@ -1,0 +1,15 @@
+1. Auktionen Roundtrip:
+----------------------
+1. Bilder auf server
+2. Bilder von Servern in Auktionen
+3. Erstelle Auktion -> Bilder Upload to client (Preview)/ Bilder croppen ???
+4. Daten für Auktionen 
+5. Erstelle Auktion UI schön
+
+2. Wall fertig
+-------------
+1. Delay Bug
+2. Filter Kathgorien
+
+3. Suchen Maske mit Auktionsliste
+
