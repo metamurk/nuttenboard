@@ -6,6 +6,7 @@ Template.wall.helpers({
 
 Template.wall.helpers({
 	auctionlist:function() {
+    $('body').removeClass('loaded');
 		return Auctions.find();
 	}
 });
@@ -21,6 +22,7 @@ function masonize(callback) {
 
 Template.wall.rendered = function() {
   setTimeout(function(){
+     $('body').addClass('loaded');
     masonize(function(){
     })
   }, 3500);
